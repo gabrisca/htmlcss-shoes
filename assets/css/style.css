@@ -1,5 +1,4 @@
 /* GENERAL */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,17 +13,10 @@ body {
   font-family: "Roboto Slab", serif;
 }
 
-.clearfix {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .container {
   width: 100%;
   margin: auto;
 }
-
 /* /GENERAL */
 
 /* HEADER - NAV */
@@ -74,53 +66,58 @@ nav a {
 nav a:hover {
   color: red;
 }
-
 /* /HEADER - NAV */
 
+/* MAIN */
 .shoes {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-size: cover;
-  /* position: relative; */
+  position: relative;
 }
 
 .box {
-  position: relative;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100vh;
-  margin: auto;
-}
-
-.box p {
-  position: absolute;
-  bottom: 10%;
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 3em;
-}
-
-.box img {
+  width: 70%;
+  height: 70%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#scarpa_1 {
+.photo_shoes {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+}
+
+.photo_shoes img {
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+
+.text_shoes {
+  height: 20%;
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0 25%;
+}
+
+#model_1 {
   background-color: #f90f00;
   color: #ffff00;
 }
 
-#scarpa_2 {
+#model_2 {
   background-color: #208000;
   color: #ffff00;
 }
 
-#scarpa_3 {
+#model_3 {
   background-color: #ffff00;
   color: #208001;
 }
+/* /MAIN */
