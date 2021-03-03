@@ -22,49 +22,43 @@ body {
 /* HEADER - NAV */
 nav {
   position: fixed;
-  top: 20px;
-  right: 0;
   width: 100%;
-  margin: auto;
-  text-align: right;
   z-index: 1;
 }
 
 nav ul {
-  width: 100%;
   list-style-type: none;
+  float: right;
 }
 
-nav li {
+nav ul li {
   position: relative;
-  display: inline-block;
+  float: left;
+}
+
+nav ul li a {
+  display: block;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  padding: 20px;
-  background-color: white;
-  margin-right: 30px;
-  /* cursor: pointer; */
-}
-
-nav li:hover {
-  box-shadow: 2px 2px 2px black;
-}
-
-nav a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
+  line-height: 50px;
   text-align: center;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  margin: 40px 20px;
   text-decoration: none;
   font-weight: 900;
   font-size: 1.5;
+  box-shadow: 2px 2px 2px black;
 }
 
-nav a:hover {
+nav ul li a:hover{
+  box-shadow: 4px 4px 4px black;
   color: red;
+}
+
+nav ul li a:active{
+  background-color: lightgray;
 }
 /* /HEADER - NAV */
 
